@@ -9,10 +9,11 @@ body {
 #foo {
     font-size: 30px;
     position: fixed;
-    bottom: 35%;
-    right: 7%;
+    bottom: 7%;
+    left: 5%;
     line-height: 2;
-    
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+
   }
 
 a:hover{
@@ -154,6 +155,8 @@ hr {
     line-height: 1.5;
 }
 
+
+
 .carousel-item{
     padding: 7% 15%;
 }
@@ -225,7 +228,65 @@ hr {
 }
 
 
+/***********************************/
+.intro1 {
+    animation: 4s anim-lineUp ease-out ;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateX(-80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
 
+.intro2 {
+    animation: 8s anim-lineUp1 ease-out ;
+  }
+  @keyframes anim-lineUp1 {
+    0% {
+      opacity: 0;
+      transform: translateX(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+
+  
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
 
 
 
